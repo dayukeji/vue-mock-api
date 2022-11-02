@@ -17,6 +17,7 @@ const requestFilter = (req, res, next) => {
     res.status(405).end('请检查请求方法是否正确!')
   }
 
+  
   if(mockMap[path].config && mockMap[path].config.validator){
     const data = mockMap[path].config.validator(req)
     if(data.status !== 200){
