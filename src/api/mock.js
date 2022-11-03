@@ -2,13 +2,12 @@ module.exports = {
 
   // 出参mock
   '/products':{
-    code:0,
+    code:'0000',
     data:[{
       id:1,
       name:'商品1'
     }],
     message:'success',
-
     // 入参mock
     config:{
       method:'GET',
